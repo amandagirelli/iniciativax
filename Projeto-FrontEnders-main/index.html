@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/logoo.ico" type="image/x-icon" sizes="180x180">
+    <title>Iniciativa X</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+<style>
+    .bg:target{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    
+    #bg{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.8);
+        position: fixed;
+        
+    }
+
+    .bg:target + .fundo{
+        background: rgba(0, 0, 0, 0.75);
+        position: fixed;
+        right: 0; left: 0px; top:0; bottom: 0;
+    }
+
+</style>
+</head>
+<body>
+
+    <div id="bg"></div>
+    <div class="box">
+        <img src="src/img/comunicado.png" alt="">
+        <a href="#fechar" id="fechar">X</a>
+    </div>
+
+    <div class="fundo">
+
+    </div>
+
+<header id="header">
+    <div id="logo">
+    <a  href="index.html"> <img src="src/img/logoo.png" alt=""></a>
+</div>
+        <nav id="nav">
+            <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li>
+                    <a class="neon-bt" href="./src/sobre.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Sobre Nós!
+                    </a>
+                </li>
+                <li>
+                    <a class="neon-bt" href="./src/lancamento.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Lançamentos
+                    </a>
+                </li>
+                <li>
+                    <a class="neon-bt" href="./src/contato.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Contato
+                    </a>
+                </li>
+                <li>
+                    <a class="neon-bt" href="./src/login.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Login
+                    </a>
+                </li>
+            </ul>
+</header>
+
+<main>
+<div id="main">
+    <div class="description">
+        <h1>Iniciativa X</h1>
+        <p>Uma empresa focada em formar pessoas em Desenvolvimento Web</p>
+        <p>A iniciativa começa com você!</p>
+    </div>
+    <div class="float">
+        <img class="floating" src="src/img/computer.png" alt="">
+    </div>
+
+    <div>
+
+    </div>
+</div>
+    <div class="card">
+        <div class="card-item card-1">
+            <h1>Iniciativa Pro</h1>
+            <p>Com esse plano, você terá acesso <strong>mensalmente</strong>  aos nossos conteúdos </p>
+            <img id="medal" src="src/img/bronze.png" alt="Medalha de Bronze">
+            <h1>R$50,00</h1>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Quero este!</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Conteúdos disponiveis:</h1>
+                    <div class="modal-window">
+                        <img src="https://www.kibrispdr.org/data/51/css-icon-png-18.png" alt="">
+                        <ul>
+                            <li>Três aulas semanais (Dias escolhidos pelo aluno).</li>
+                            <li>Recomendação de conteúdos extra-aulas.</li>
+                            <li>Exercicios para desenvolvimento extra-aulas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-item card-2">
+            <h1>Iniciativa Plus</h1>
+            <p>Com esse plano, você terá acesso <strong>semestralmente</strong> aos nossos conteúdos </p>
+            <img id="medal" src="src/img/silver.png" alt="Medalha de Prata">
+            <h1>R$50,00</h1>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn2">Quero este!</button>
+
+            <!-- The Modal -->
+            <div id="myModal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Conteúdos disponiveis:</h1>
+                    <div class="modal-window">
+                        <img src="https://www.kibrispdr.org/data/51/css-icon-png-18.png" alt="">
+                        <ul>
+                            <li>Três aulas semanais (Dias escolhidos pelo aluno).</li>
+                            <li>Recomendação de conteúdos extra-aulas.</li>
+                            <li>Exercicios para desenvolvimento extra-aulas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-item card-3">
+            <h1>Inicativa Vip</h1>
+            <p>Com esse plano, você terá acesso <strong>anualmente</strong>  aos nossos conteúdos </p>
+            <img id="medal" src="src/img/gold.png" alt="Medalha de Ouro">
+            <h1>R$50,00</h1>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn3">Quero este!</button>
+
+            <!-- The Modal -->
+            <div id="myModal3" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Conteúdos disponiveis:</h1>
+                    <div class="modal-window">
+                        <img src="https://www.kibrispdr.org/data/51/css-icon-png-18.png" alt="">
+                        <ul>
+                            <li>Três aulas semanais (Dias escolhidos pelo aluno).</li>
+                            <li>Recomendação de conteúdos extra-aulas.</li>
+                            <li>Exercicios para desenvolvimento extra-aulas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="informations">
+        <div id="colunm-1"><p>Institucional</p>
+            <ul>
+                <li>Quem somos</li>
+                <li>Termos e condições de venda</li>
+                <li>Política de Segurança e Privacidade</li>
+                <li>Política de Cookies</li>
+            </ul>
+        </div>
+        
+        <div id="colunm-2"><p>Dúvidas</p>
+            <ul>
+                <li>Como comprar</li>
+                <li>Prazos e entregas</li>
+                <li>Formas de pagamento</li>
+                <li>Programas de Parceiros</li>
+            </ul>
+        </div>
+        
+        <div id="colunm-3"><p>Cliente</p>
+            <ul>
+                <li>Minha Conta</li>
+                <li>Meus Pedidos</li>
+                <li>Meus Tickets</li>
+            </ul>
+        </div>
+        
+        <div id="colunm-4"><p>Ajuda</p>
+        <ul>
+            <li>Video Tutoriais</li>
+            <li>Manuseio do Produto</li>
+            <li>Fale Conosco</li>
+        </ul>
+    </div>
+</div>
+
+    <div id="colunm-5">
+        <p>Receba nossas promoções exclusivas!</p>
+        <input  id="email" class="input" type="text" placeholder="Digite seu e-mail aqui!">
+        <button id="submit" onclick="alertEmailSent()" class="button">Enviar</button>
+    </div>
+    
+<div id="colunm-6">
+    <a href=""><img src="src/img/instagram-icon.png" alt=""></a>
+    <a href=""><img src="src/img/telegram-icon.png" alt=""></a>
+    <a href=""><img src="src/img/whatsapp-icon.png" alt=""></a>
+    <p>Siga-nos</p>
+</div>
+</footer>
+
+<script src="src/js/script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
